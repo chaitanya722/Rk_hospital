@@ -59,6 +59,7 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">logo</div>
+
     <div class="hamburger">
       <span></span>
       <span></span>
@@ -72,6 +73,7 @@
       <li><a href="#preabout">About Us</a></li>
       <li><a href="#about">Philosophy</a></li>
       <li><a href="#services-section">Services</a></li>
+      <li><a onclick="window.location.href='values.html'">Our Values</a></li>
       <li><a href="#stay">Stay</a></li>
       <li><a href="#book-apt">Contact Us</a></li>
     </ul>
@@ -122,29 +124,9 @@ healthcare center setting new standards in patient care. Our facility brings tog
          
         </div>
       </div>
+     
+    
       <div class="item3">
-        <div class="preabout2-hd">
-          <img src="/images/comments.png" alt="">
-          <h1>what our patient say</h1>
-          <div class="vertical-line2"></div>
-          <div class="testimonial">
-            <div class="testimonial-left">
-              <div class="rating">4.9</div>
-              <img class="dp" src="/images/dr4.avif" alt="Doctor's Profile Picture" />
-            </div>
-            <div class="testimonial-right">
-              <h3>Mr. Shane, Parent of Pediatric Patient</h3>
-              <p class="opinion">
-                "As a father, I was worried about my child's surgery. The pediatric team's constant support and expertise made all the difference."
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item4">
-       <img src="/images/dr-.webp" alt="">
-      </div>
-      <div class="item5">
         <div class="preabout2-hd">
           <img src="/images/trophy.png" alt="">
           <h1>our milestones</h1>
@@ -470,5 +452,13 @@ healthcare center setting new standards in patient care. Our facility brings tog
   <script>
     
   </script>
+  <script>
+    function redirectToPage(page) {
+        if (page === 'values') {
+            window.location.href = 'values.html'; // Change this to the actual page URL
+        }
+    }
+</script>s
+
 </body>
 </html>
