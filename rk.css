@@ -1696,6 +1696,7 @@ textarea:focus {
   overflow:hidden
 }
 
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -1705,6 +1706,11 @@ textarea:focus {
 
 .footer-left {
   margin-bottom: 20px;
+}
+
+.social-icons img {
+  height:20px;
+  width:20px;
 }
 
 .logo {
