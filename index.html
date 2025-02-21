@@ -284,7 +284,7 @@ healthcare center setting new standards in patient care. Our facility brings tog
       </ul>
     </div>
   </div>
-   <div class="stay" id="stay">
+  <div class="stay" id="stay">
     <p class="hd_stay">stay</p>
     <h1 class="bg_stay">stay</h1>
     <p class="p_stay">we aim to make your stay as <span>comfortable</span> and restorative as possible.Our <span>dedicated</span> team is committed to not only providing <span>expert</span> medical care but also ensuring that you feel <span>genuienly</span> cared for and supported during your time with us.your well being is our priority</p>
@@ -294,11 +294,11 @@ healthcare center setting new standards in patient care. Our facility brings tog
       <p class="yh1 yh11" id="mytext">your care, your comfort</p>
       <p class="yh1 yh12" id="mytext">your choice</p>
     </div>
-    <div class="your_down">
+    <div class="your_down" id="your_down">
       <div class="your_item yitem1">
         <h1>inpatient say</h1>
         <p>We provide comprehensive 24-hour medical care for patients requiring overnight stays. voluptatibus.</p>
-        <button onclick="redirectToPage('impatient')">learn more</button>
+        <button class="learn-more-btn" onclick="redirectToPage('impatient')">learn more</button>
       </div>
       <div class="your_item yitem2">
         <h1>outpatient say</h1>
@@ -312,6 +312,66 @@ healthcare center setting new standards in patient care. Our facility brings tog
       </div>
     </div>
   </div> 
+  
+  <div class="bookapt" id="book-apt">
+    <section class="bookappointment">
+      <h1>Book Appointment</h1>
+      <form id="appointmentForm">
+        <div class="form-container">
+          <!-- Left Column -->
+          <div class="form-left">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <i class="fas fa-user"></i>
+              <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <i class="fas fa-phone"></i>
+              <input type="text" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="Enter your email (optional)">
+            </div>
+            <div class="form-group" margin-bottom=5rem>
+              <label for="department">Department</label>
+              <i class="fas fa-hospital"></i>
+              <select id="department" required>
+                <option value="" disabled selected>Choose Department</option>
+                <option value="cardiology">Surgery</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="neurology">ENT</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="pediatrics">Medicine</option>
+              </select>
+            </div>
+          </div>
+  
+          <!-- Vertical Divider -->
+          <div class="form-divider"></div>
+  
+          <!-- Right Column -->
+          <div class="form-right">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <i class="fas fa-calendar-alt"></i>
+              <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <i class="fas fa-comment-dots"></i>
+              <textarea id="message" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
   
   
 
