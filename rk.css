@@ -1713,12 +1713,15 @@ textarea:focus {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: center;
+  align-items: flex-start; /* Aligns items to the left */
+  text-align: left; /* Aligns text to the left */
+  width: 100%;
 }
 
-.footer-left {
-  margin-bottom: 20px;
+.footer-left, 
+.footer-links, 
+.column {
+  text-align: left; /* Ensures all sections are aligned left */
 }
 
 
@@ -1740,10 +1743,6 @@ textarea:focus {
 }
 
 
-.footer-links {
-  display: flex;
-  flex-direction: column;
-}
 
 
 
@@ -1800,9 +1799,6 @@ textarea:focus {
 
 
 
-.column {
-  margin-bottom: 20px;
-}
 
 h3 {
   font-size: 18px;
@@ -1843,23 +1839,20 @@ a {
 /* Responsive for Desktop */
 @media screen and (min-width: 768px) {
   .footer-container {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
+    flex-direction: row; /* Switch to row layout for desktop */
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .footer-links {
-      flex-direction: row;
-      gap: 50px;
+    display: flex;
+    flex-direction: row; /* ✅ Forces links to appear in a row */
+    gap: 50px; /* Adjust spacing */
+    flex-wrap: wrap; /* Ensures responsiveness */
   }
 
-  .footer-images {
-      justify-content: flex-end;
-      margin-top: 0;
-  }
-
-  .scroll-top {
-      right: 40px;
+  .column {
+    margin-right: 50px; /* Adds spacing between columns */
   }
 }
 
@@ -2277,7 +2270,7 @@ a {
     font-size: 20px;
   }
   .navbar .logo img{
-    height: 15vw !important;
+    height: 40vw !important;
   }
  
   .content{
