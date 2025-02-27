@@ -486,17 +486,17 @@ border: none;
 
 }
 .item1 {
-  grid-column: 1 / span 1; /* Spans across two columns */
-  grid-row: 1 / span 1; /* Takes up 2 rows */
+  grid-column: 1;
+  grid-row: 1;
   background-color:#70828b;
   border-radius: 20px;
   padding: 20px;
   margin-top:160px;
-  height:160vh;
+  height:120vh;
 
 }
 .item1 h1{
-  font-size: 5px;
+  font-size: 25px;
   text-align: center;
   color:#f4f6f8;
 
@@ -529,6 +529,18 @@ border: none;
   color:#f4f6f8;
 
 }
+.item4 h1{
+  font-size: 25px;
+  color:#f4f6f8;
+  text-align: center;
+
+}
+.item4 p{
+  font-size: 20px;
+  color:#f4f6f8;
+
+}
+
 .item5 h1{
   font-size: 25px;
   text-align: center;
@@ -545,7 +557,7 @@ border: none;
   grid-row: 1;
   background-color:#77748b;
   border-radius: 20px;
-  height:160vh;
+  height:120vh;
   margin-top:160px;
 
 }
@@ -555,27 +567,22 @@ border: none;
   grid-row: 1;
   background-color:#70828b;
   border-radius: 20px;
-  height:160vh;
+  height:120vh;
   margin-top:160px;
 
 }
 
 .item4 {
-  grid-column: 3;
-  grid-row: 1 / span 1; /* Spans across both rows */
-  background-color: #fdfd96;
+  grid-column: 2;
+  grid-row: 1 ;
+  background-color: #77748b;
   border-radius: 20px;
   object-fit: cover;
-  height: 60vh;
-  margin-top: 60px;
+  height: 120vh;
+  margin-top: 160px;
 }
 
-.item4 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
+
 
 .item5 {
   grid-column: 3;
@@ -669,11 +676,11 @@ border: none;
   background-color: #eff5ff;
 }
 
-.items1, .items3 {
+.items1, .items3 , .items4{
   flex-direction: row; /* Image on the left, text on the right */
 }
 
-.items2, .items4 {
+.items2{
   flex-direction: row-reverse; /* Text on the left, image on the right */
 }
 
@@ -1163,9 +1170,15 @@ color: #5d6776;
   /* background-color: red; */
 }
 
+
 .carousel-track-container {
   width: 100%;
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Enables snapping */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
 }
+
 
 .carousel-track {
   display: flex;
@@ -1700,7 +1713,7 @@ textarea:focus {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
 }
 
@@ -1711,7 +1724,7 @@ textarea:focus {
 
 
 .logo {
-  max-width: 150px; /* Adjust the width as needed */
+  max-width: 200px; /* Adjust the width as needed */
   height: auto;
 }
 
@@ -1719,6 +1732,13 @@ textarea:focus {
   width: 24px;
   margin: 0 10px;
 }
+
+.social-icons a,
+.social-icons i {
+  margin: 10px  5px; /* Adjust spacing as needed */
+  font-size: 24px; /* Optional: Increase icon size */
+}
+
 
 .footer-links {
   display: flex;
@@ -1731,6 +1751,13 @@ textarea:focus {
   display: flex;
   align-items: flex-end;
   
+}
+
+.divider {
+  margin-bottom: 20px; /* Adjust the value as needed */
+  border: none; /* Remove default border */
+  height: 1px;
+  background-color: white; /* Adjust color if needed */
 }
 
 .circle-image {
@@ -2146,9 +2173,11 @@ a {
     }
     .form-container i{
       margin-top: 5px;
+      
     }
     .form-divider{
       display: none;
+    
     }
     .footer{
       width: 100%;
