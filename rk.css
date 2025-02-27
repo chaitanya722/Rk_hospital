@@ -1729,6 +1729,7 @@ textarea:focus {
 .logo {
   max-width: 300px; /* Adjust the width as needed */
   height: auto;
+  display:flex-start
 }
 
 .social-icons img {
@@ -2398,7 +2399,7 @@ display: none;
 }
 .item4 p{
   font-size: 4vw;
-  order: -1;
+
 }
 .item5 p{
   font-size: 4vw;
