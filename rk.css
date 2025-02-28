@@ -1427,7 +1427,6 @@ font-weight: bolder;
  =============================================================================================================================== =============================================================================================================================== */ 
 
 .stay{
-
   width: 100%;
   height: 100vh;
   background-color:#fafcfe;
@@ -1470,8 +1469,6 @@ top:15vh;
   color:#f2f3f8;
   opacity:1;
   text-transform: uppercase;
-
-
 }
 .stay p,
 .stay h1 {
@@ -1710,6 +1707,7 @@ textarea:focus {
 }
 
 
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -1725,7 +1723,6 @@ textarea:focus {
 }
 
 
-
 .logo {
   max-width: 300px; /* Adjust width */
   height: auto;
@@ -1733,6 +1730,7 @@ textarea:focus {
   margin-left: 0; /* Pushes it to the left */
   padding-left: 0; /* Ensures no extra padding */
 }
+
 
 
 .social-icons img {
@@ -2445,7 +2443,7 @@ height:auto;
 
 
 /* Responsive Styling for Mobile Devices */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 .preabout2{
   /* padding: 20px; */
   display: flex;
@@ -2729,6 +2727,7 @@ margin-top: -2vh;
     .prev-btn{
       left: 40%;
     }
+
   .stay{
     padding: 0px;
     width:100%;
@@ -2736,8 +2735,9 @@ margin-top: -2vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 20vh;
   }
+  
   .hd_stay{
   top: 4%;
   }
@@ -2747,7 +2747,6 @@ margin-top: -2vh;
   }
     
 .your{
-
   /* background-color: yellow; */
   padding: 0;
   width: 100%;
@@ -2773,7 +2772,7 @@ margin-top: -2vh;
 }
 
 .yh12{
-  margin-top: 20vh;
+  margin-top:20vh;
   /* text-align: center; */
 
 }
