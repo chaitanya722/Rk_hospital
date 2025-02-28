@@ -1723,6 +1723,14 @@ textarea:focus {
 }
 
 
+.logo {
+  max-width: 300px; /* Adjust width */
+  height: auto;
+  display: block; /* Ensures it behaves as a block element */
+  margin-left: -20px; /* Pushes it to the left */
+  padding-left: 0; /* Ensures no extra padding */
+}
+
 
 
 .social-icons img {
