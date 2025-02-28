@@ -1470,6 +1470,20 @@ top:15vh;
   opacity:1;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 480px) {
+.bg_stay{
+  position: absolute;
+}
+.hd_stay{
+  position: relative;
+  margin-bottom: 50px;
+}
+.p_stay{
+  position: relative;
+}
+}
+
 .stay p,
 .stay h1 {
   transform: translateY(100px); /* Off-screen position */
@@ -1679,7 +1693,7 @@ textarea:focus {
   top:45px;
   left: 10px;
   transform: translateY(-50%);
-  color: #348061;
+  color: #000000;
   font-size: 1.2rem;
 }
 
@@ -1703,9 +1717,9 @@ textarea:focus {
   color: white;
   padding: 30px;
   position: relative;
-  overflow:hidden
+  overflow:hidden;
+  font-family: var(--font-primary);
 }
-
 
 
 .footer-container {
@@ -1717,9 +1731,16 @@ textarea:focus {
 }
 
 .footer-left, 
-.footer-links, 
+.footer-links{
+  margin-bottom: 0;
+}
 .column {
   text-align: left; /* Ensures all sections are aligned left */
+  margin-bottom: 35px;
+}
+
+.column:last-child{
+  margin-bottom: 0;
 }
 
 
@@ -1758,7 +1779,7 @@ textarea:focus {
   margin-bottom: 20px; /* Adjust the value as needed */
   border: none; /* Remove default border */
   height: 1px;
-  background-color: white; /* Adjust color if needed */
+  background-color: rgb(195, 190, 190); /* Adjust color if needed */
 }
 
 .circle-image {
@@ -1813,7 +1834,7 @@ ul {
 }
 
 li {
-  margin: 5px 0;
+  margin: 9px 0;
 }
 
 a {
@@ -1856,6 +1877,23 @@ a {
   .column {
     margin-right: 50px; /* Adds spacing between columns */
   }
+}
+
+@media screen and (max-width: 768px) {
+  .footer{
+    height: unset !important;
+  }
+  .footer-container {
+    flex-direction: column-reverse;
+  }
+
+  .footer-left{
+    margin-top: 100px;
+  }
+
+.footer-header{
+  margin-bottom: 25px;
+}
 }
 
   
@@ -2177,7 +2215,7 @@ a {
     .footer{
       width: 100%;
       height: 100%;
-      padding: 20px;
+      padding: 0 25px;
       position: relative;
   
     }
@@ -3462,6 +3500,7 @@ margin-top:-2.5vh;
     height:50vh;
     margin-top:0vh;
     z-index: 101;
+    overflow: hidden;
     /* background-color:green; */
   }
   .item5{
