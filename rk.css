@@ -19,7 +19,9 @@ body {
   scroll-behavior: smooth;
 }
 
-
+.services-title{
+  margin-top: 69px;
+}
 
 .book-apt {
 
@@ -420,7 +422,6 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid white;
   border-radius: 20px;
   width: 30px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -615,7 +616,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #77748b;
   border-radius: 20px;
   object-fit: cover;
-  height: 120vh;
   margin-top: 160px;
 }
 
@@ -1006,7 +1006,6 @@ svg {
 .abt-btns {
   padding: 10px 5px;
   font-weight: bold;
-  position: absolute;
   left: 450px;
   top: 280px;
   z-index: 1000000000;
@@ -1047,7 +1046,6 @@ svg {
   height: 60vh;
   /* background-color: red; */
   padding: 20px;
-  position: absolute;
   margin-left: 500px;
   display: flex;
   justify-content: start;
@@ -1097,6 +1095,9 @@ svg {
     width: 100%;
     padding: 20px;
 
+  }
+  .item4{
+    height: unset;
   }
 
   .right-content {
@@ -3305,7 +3306,6 @@ a {
   .right-content {
     /* background-color: orange; */
     width: 100%;
-    height: 50vh;
     position: absolute;
     left: -127vw;
     top: 63xvh;
