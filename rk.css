@@ -19,9 +19,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.services-title{
-  margin-top: 69px;
-}
+
 
 .book-apt {
 
@@ -422,6 +420,7 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid white;
   border-radius: 20px;
   width: 30px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -616,6 +615,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #77748b;
   border-radius: 20px;
   object-fit: cover;
+  height: 120vh;
   margin-top: 160px;
 }
 
@@ -1006,6 +1006,7 @@ svg {
 .abt-btns {
   padding: 10px 5px;
   font-weight: bold;
+  position: absolute;
   left: 450px;
   top: 280px;
   z-index: 1000000000;
@@ -1046,6 +1047,7 @@ svg {
   height: 60vh;
   /* background-color: red; */
   padding: 20px;
+  position: absolute;
   margin-left: 500px;
   display: flex;
   justify-content: start;
@@ -1095,9 +1097,6 @@ svg {
     width: 100%;
     padding: 20px;
 
-  }
-  .item4{
-    height: unset;
   }
 
   .right-content {
@@ -1458,7 +1457,7 @@ svg {
   margin-top: 100px;
   color: white;
   box-sizing: border-box;
-  /* Ensure padding doesn’t affect the width/height */
+  /* Ensure padding doesnâ€™t affect the width/height */
   overflow: hidden;
   /* Prevent content overflow */
 }
@@ -1617,6 +1616,21 @@ background-color: aqua;
   .p_stay {
     position: relative;
   }
+
+  .large {
+    top: -58px !important;
+    right: 223px !important;
+  }
+
+  .small {
+    right: 22px !important;
+    top: 67px !important;
+  }
+
+  .medium {
+    top: 75px !important;
+    right: 55px !important;
+  }
 }
 
 .stay p,
@@ -1773,7 +1787,7 @@ background-color: aqua;
 
 .bookappointment {
   background-color: rgba(255, 255, 255, 0.8);
-
+  height: 95%;
   width: 95%;
   padding: 30px;
   border-radius: 10px;
@@ -2013,9 +2027,9 @@ a {
   background: white;
   border: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+  width: 64px;
+  height: 64px;
+  font-size: 30px;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -2035,7 +2049,7 @@ a {
   .footer-links {
     display: flex;
     flex-direction: row;
-    /* ✅ Forces links to appear in a row */
+    /* âœ… Forces links to appear in a row */
     gap: 50px;
     /* Adjust spacing */
     flex-wrap: wrap;
@@ -2384,6 +2398,10 @@ a {
 
   .bookapt {
     padding: 10px;
+    height: auto;
+  }
+
+  .bookappointment {
     height: auto;
   }
 
@@ -2811,7 +2829,7 @@ a {
     /* background-color: rgb(0, 119, 128); */
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
   }
 
   .about>h1 {
@@ -2848,9 +2866,9 @@ a {
   .right-content {
     /* background-color: orange; */
     width: 100%;
-    height: 40.5vh;
+    height: 37.5vh;
     position: absolute;
-    left: -120.5vw;
+    left: -112.5vw;
     top: 56vh;
     display: flex;
     flex-direction: column;
@@ -2875,7 +2893,7 @@ a {
 
   .bookapt {
     padding: 10px;
-
+    height: 110vh;
   }
 
   .book-apt img {
@@ -2966,7 +2984,7 @@ a {
     /* height: 10vh; */
     position: absolute;
     margin: 1vh 1vh;
-    top: 15%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, -10%);
     text-align: center;
@@ -2979,6 +2997,8 @@ a {
     font-size: 3.5vh;
     position: absolute;
     margin: 1vh 1vh;
+    top: 34%;
+    left: 50%;
     transform: translate(-50%, -300%);
     text-align: center;
     /* Optional: Align text in the paragraph */
@@ -3000,7 +3020,7 @@ a {
     position: absolute;
     margin: 1vh 1vh;
     z-index: 1;
-    top: 30%;
+    top: 26%;
     left: 0%;
     text-align: center;
     /* Optional: Align text in the paragraph */
@@ -3032,7 +3052,6 @@ a {
     justify-content: center;
     overflow: hidden;
     /* background-color: red; */
-    margin-bottom: -5vh;
   }
 
 
@@ -3080,7 +3099,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 39vh;
+    height: 20vh;
   }
 
   .hd_stay {
@@ -3195,7 +3214,7 @@ a {
     right: auto;
     /* background-color: red; */
     width: 60%;
-    /* Ensure it doesn’t overflow */
+    /* Ensure it doesnâ€™t overflow */
     text-align: center;
     margin: 60px 0;
     /* Add spacing */
@@ -3252,6 +3271,9 @@ a {
     /* background-color: red; */
   }
 
+  .bookapt {
+    height: 120vh;
+  }
 
   .bookapt h1 {
     color: black;
@@ -3306,6 +3328,7 @@ a {
   .right-content {
     /* background-color: orange; */
     width: 100%;
+    height: 50vh;
     position: absolute;
     left: -127vw;
     top: 63xvh;
@@ -3592,7 +3615,7 @@ a {
     font-size: 4vh;
     left: 50%;
     /* margin-top:3vh; */
-    margin: 0 1vh;
+    margin: 2vh 1vh;
 
     /* transform: translate(-50%, -00%); */
     text-align: center;
@@ -3811,7 +3834,7 @@ a {
     right: auto;
     /* background-color: red; */
     width: 60%;
-    /* Ensure it doesn’t overflow */
+    /* Ensure it doesnâ€™t overflow */
     text-align: center;
     margin: 60px 0;
     /* Add spacing */
