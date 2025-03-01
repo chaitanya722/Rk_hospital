@@ -1631,6 +1631,17 @@ background-color: aqua;
     top: 75px !important;
     right: 55px !important;
   }
+  .main button {
+    margin-right: 13px !important;
+  }
+
+  .right-content {
+    height: 26.5vh !important;
+  }
+
+  .about{
+    height: 87vh !important;
+  }
 }
 
 .stay p,
@@ -2967,9 +2978,9 @@ a {
   .services-section>h1 {
     font-size: 5vw;
     position: absolute;
-    top: 7%;
+    top: 5%;
     border-radius: 30px;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -40%);
     text-align: center;
     /* Optional: Align text in the paragraph */
@@ -2985,7 +2996,7 @@ a {
     position: absolute;
     margin: 1vh 1vh;
     top: 13%;
-    left: 50%;
+    left: 54%;
     transform: translate(-50%, -10%);
     /* Optional: Align text in the paragraph */
   }
@@ -2995,7 +3006,7 @@ a {
     width: 100%;
     font-size: 3.5vh;
     position: absolute;
-    margin: 1vh 1vh;
+    margin: 0 1vh;
     top: 34%;
     left: 50%;
     transform: translate(-50%, -300%);
@@ -3006,7 +3017,7 @@ a {
 
   .services-section .learn {
     font-size: 20px;
-    margin: 1vh 1vh;
+    margin: 2vh 1vh;
 
   }
 
@@ -3131,9 +3142,13 @@ a {
   }
 
   .yh1 {
-    font-size: 30px;
+    font-size: 24px;
     /* text-align: center; */
 
+  }
+
+  .yh11 {
+    margin-top: 13vh;
   }
 
   .yh12 {
