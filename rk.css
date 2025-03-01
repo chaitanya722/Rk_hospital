@@ -1043,15 +1043,17 @@ svg {
 
 
 .right-content {
-  width: 40vw;
-  height: 60vh;
+  /* width:; */
+  /* height: 60vh; */
   /* background-color: red; */
   padding: 20px;
-  position: absolute;
-  margin-left: 500px;
-  display: flex;
-  justify-content: start;
-  align-items: start;
+ padding-top: 550px;
+  /* position: absolute; */
+  /* top: 10px; */
+  /* margin-left: 500px; */
+  display : flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-direction: column;
   font-family: var(--font-primary);
@@ -1096,17 +1098,17 @@ svg {
     /* Centers vertically */
     width: 100%;
     padding: 20px;
+  
 
   }
 
   .right-content {
-    height: 100vh;
-    /* Full viewport height */
+    /* height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
   }
 
   .btn1 {
@@ -1141,17 +1143,17 @@ svg {
     /* Centers vertically */
     width: 100%;
     padding: 20px;
+    
 
   }
 
   .right-content {
-    height: 100vh;
-    /* Full viewport height */
+    /* height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
   }
 
   .btn1 {
@@ -1564,6 +1566,7 @@ background-color: aqua;
   align-items: center;
   font-family: var(--font-primary);
   z-index: 100;
+  margin-block: 250px;
 }
 
 
@@ -2377,19 +2380,16 @@ a {
   }
 
   .right-content {
-    /* background-color: orange; */
-    width: 100%;
+    
+    /* width: 100%;
     height: 40.5vh;
     position: absolute;
-    /* top:50%; */
-    /* left:50%; */
-    /* transform: translate(-50%,-100%); */
     left: -120.5vw;
     top: 56vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
   }
 
@@ -2774,6 +2774,10 @@ a {
 
 
 
+
+
+
+
 /* Responsive Styling for Mobile Devices */
 @media (max-width: 768px) {
   .preabout2 {
@@ -2875,8 +2879,7 @@ a {
   }
 
   .right-content {
-    /* background-color: orange; */
-    width: 100%;
+    /* width: 100%;
     height: 37.5vh;
     position: absolute;
     left: -112.5vw;
@@ -2884,7 +2887,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
   }
 
@@ -3341,7 +3344,7 @@ a {
 
   .right-content {
     /* background-color: orange; */
-    width: 100%;
+    /* width: 100%;
     height: 50vh;
     position: absolute;
     left: -127vw;
@@ -3349,7 +3352,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
   }
 
@@ -3492,7 +3495,7 @@ a {
 
   .right-content {
     /* background-color: orange; */
-    width: 100%;
+    /* width: 100%;
     height: 50vh;
     position: absolute;
     left: -133vw;
@@ -3500,7 +3503,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
   }
 
@@ -4026,7 +4029,7 @@ a {
 
   .right-content {
     /* background-color: orange; */
-    width: 100%;
+    /* width: 100%;
     height: 50vh;
     position: absolute;
     left: -138vw !important;
@@ -4035,7 +4038,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
   }
 
