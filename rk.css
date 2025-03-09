@@ -1556,7 +1556,7 @@ background-color: aqua;
 
 .stay {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-color: #fafcfe;
   position: relative;
   display: flex;
@@ -2967,8 +2967,8 @@ a {
   }
 
   .services-section {
-    /* background-color: #ff9f00; */
-    /* width: 100%;
+    /* background-color: #ff9f00;
+    width: 100%;
     display: flex;
     padding: none;
     flex-direction: column;
@@ -4155,17 +4155,18 @@ a {
   >h1{
     font-size: 15px;
   }
-  >.ser_text
+  /* >.ser_text
     {
       width: 85%;
       height: 100%;
-      position: relative;
-      left: 0%;
+      position:relative;
+      left: 20%;
       text-align: center;
       padding-top: 8px;
       font-size: 20px;
+      transform: translate(-50%, -10%)
       
-    }
+    } */
   }
  .active_service{
    /* position:absolute; */
@@ -4216,8 +4217,20 @@ a {
  }
  .any{
   display:none;
- }
- 
+ } .services-section>.ser_text {
+  display: flex;
+  z-index: 100;
+  font-size: 19px;
+  width: 85%;
+  text-align: center;
+  position: absolute;
+  margin: 1vh 1vh;
+  top: 13%;
+  left: 49%;
+  transform: translate(-50%, -10%);
+  /* Optional: Align text in the paragraph */
+}
+
 }
 
 
