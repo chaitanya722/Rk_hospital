@@ -65,7 +65,7 @@
   </nav>
 
   <!-- Fullscreen Navigation -->
-  <div class="fullscreen-nav">
+  <div class="fullscreen-nav" id = "fullscreen-nav">
     <ul>
       <li><a href="#item4">About Us</a></li>
       <li><a href="#about">Philosophy</a></li>
@@ -217,7 +217,6 @@ healthcare center setting new standards in patient care. Our facility brings tog
       </button>
     </div>
   
-  
     <h1 class="services-title">same day results</h1>
     <p class="para">Get your test results on the same day, ensuring faster diagnosis and treatment. Experience prompt and reliable services that prioritize your health and peace of mind.</p>
     <a href="#book-apt">
@@ -230,17 +229,15 @@ healthcare center setting new standards in patient care. Our facility brings tog
 </div>   
 
 <div class="services-section" id="services-section"> 
-     <h1>Services</h1>
-    <p class="ser_text">Experiance comprehensive healthcare through our special departments</p>
     
-
+    <p class="ser_text">Experiance comprehensive healthcare through our special departments</p>
       <p class="active_service">Surgery</p>
 
-
-    <div class="btns">
+     <div class="btns">
       <a href="#book-apt"><button class="book-apt">book an appointment</button></a>
       <button class="learn" id="learnMore">learn more <i class="fas fa-arrow-right"></i></button>
     </div>
+    <h1>Services</h1>
     <div class="carousel">
       <button class="carousel-btn prev-btn"><i class="fas fa-arrow-left"></i></button>
 
@@ -252,12 +249,11 @@ healthcare center setting new standards in patient care. Our facility brings tog
           <div class="carousel-item carousel-item-2" data-service="orthopedic"><img src="https://img.freepik.com/premium-photo/physiotherapist-holding-skeleton-feet-model_107420-53154.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>
           <div class="carousel-item carousel-item-2" data-service="ENT"><img src="https://img.freepik.com/free-photo/doctor-using-inspection-spatula-examine-patient-throat-ent-doctor-doing-throat-exam-woman-patient-opened-her-mouth-throat-checkup_657921-246.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>
           <div class="carousel-item carousel-item-2" data-service="Pediatric"><img src="https://img.freepik.com/free-photo/african-american-pediatrician-doctor-analyzing-sickness-expertise-using-tablet_482257-26937.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>
-          <div class="carousel-item carousel-item-2" data-service="Medicine"><img src="https://img.freepik.com/free-photo/flat-lay-arrangement-with-pills_23-2148504582.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>
-          
-         
+          <div class="carousel-item carousel-item-2" data-service="Medicine"><img src="https://img.freepik.com/free-photo/flat-lay-arrangement-with-pills_23-2148504582.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>         
         </div>
       </div>
     </div>
+    
   </div> 
   <div class="post_services hidden">
     <button id="back"><i class="fas fa-arrow-left"></i></button>
@@ -288,6 +284,10 @@ healthcare center setting new standards in patient care. Our facility brings tog
     <p class="hd_stay">stay</p>
     <h1 class="bg_stay">stay</h1>
     <p class="p_stay">we aim to make your stay as <span>comfortable</span> and restorative as possible.Our <span>dedicated</span> team is committed to not only providing <span>expert</span> medical care but also ensuring that you feel <span>genuienly</span> cared for and supported during your time with us.your well being is our priority</p>
+    <a href="#fullscreen-nav" class="any"> <button class="scroll-down scroll-down2">
+      <span>&#8593;</span>
+      </button></a>
+
   </div> 
   <div class="your">
     <div class="your_top">
@@ -309,10 +309,13 @@ healthcare center setting new standards in patient care. Our facility brings tog
         <h1>visitors</h1>
         <p>We welcome family and friends as essential parts of our patients' healing journey.</p>
         <button onclick="redirectToPage('visitors')">learn more</button>
+       
       </div>
     </div>
+    
   </div> 
   
+
   <div class="bookapt" id="book-apt">
     <section class="bookappointment">
       <h1>Book Appointment</h1>
@@ -472,6 +475,7 @@ healthcare center setting new standards in patient care. Our facility brings tog
 
 
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
 <script src="https://unpkg.com/split-type"></script>
 
@@ -479,8 +483,7 @@ healthcare center setting new standards in patient care. Our facility brings tog
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
   <script src="script.js"></script>
-  <script>
-    
+
   </script>
 </body>
 </html>
