@@ -8,7 +8,51 @@
      <!-- Link your CSS file -->
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script> 
 </head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".fullscreen-nav");
+    
+        hamburger.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+        });
+    });
+    </script>
+    
 <body>
+      <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">
+        <img src="/images/r-k logo.png" alt="Logo" class="logo">
+    </a>
+          <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+<!-- Fullscreen Navigation -->
+<div class="fullscreen-nav">
+    <ul>
+      <li><a href="#preabout">About Us</a></li>
+      <li><a href="#about">Philosophy</a></li>
+      <li><a href="#services-section">Services</a></li>
+      <li><a onclick="window.location.href='values.html'">Our Values</a></li>
+      <li><a href="#stay">Stay</a></li>
+      <li><a href="#book-apt">Contact Us</a></li>
+    </ul>
+    <div class="buttons">
+      <a href="#book-apt">
+        <button class="book">Book an Appointment</button>
+
+      </a>
+      <a href="#services-section">
+      <button class="explore">Explore Services</button>
+
+      </a>
+    </div>
+  </div>
 
     <div class="preabout2">
         <div class="preabout2-hd">
@@ -18,42 +62,42 @@
         </div>
         
         <div class="items1">
-            <div class="items1-left">
+            <!-- <div class="items1-left">
                 <img src="https://img.freepik.com/premium-photo/nurse-white-robe-with-stethoscope-her-neck-is-making-report-table_567313-3985.jpg" alt="Empathy in Action">
-            </div>
+            </div> -->
             <div class="items1-rightt">
                 <h1>Empathy in Action</h1>
-                <p>We go beyond understanding - we truly connect with the needs of our patients...</p>
+                <p>We go beyond understanding — we truly connect with the needs of our patients. Our approach is built on compassion and respect, ensuring every individual feels valued and cared for. Through patient-centered solutions, we aim to make a meaningful difference in their lives and the community we serve.</p>
             </div>
         </div>
 
         <div class="items2">
-            <div class="items2-left">
+            <!-- <div class="items2-left">
                 <img src="https://img.freepik.com/premium-photo/front-view-young-intellectual-healthcare-doctor-labcoat-with-blond-hair-standing_567313-4671.jpg" alt="Pursuit of Excellence">
-            </div>
+            </div> -->
             <div class="items2-rightt">
                 <h1>Pursuit of Excellence</h1>
-                <p>We are driven by an unwavering commitment to achieving the highest standards in healthcare...</p>
+                <p>We are driven by an unwavering commitment to achieving the highest standards in healthcare. By embracing innovation and continuous learning, we strive to set new benchmarks in medical expertise, ensuring our patients receive world-class care every time..</p>
             </div>
         </div>
 
         <div class="items3">
-            <div class="items3-left">
+            <!-- <div class="items3-left">
                 <img src="https://img.freepik.com/premium-photo/portrait-smiling-male-doctor-holding-clipboard_255757-1512.jpg" alt="Precision and Responsiveness">
-            </div>
+            </div> -->
             <div class="items3-rightt">
                 <h1>Precision and Responsiveness</h1>
-                <p>Time and accuracy are at the core of what we do...</p>
+                <p>Time and accuracy are at the core of what we do. Our focus on efficiency ensures that every patient receives timely, tailored, and effective treatment. By combining advanced medical practices with personalized attention, we deliver care that is seamless and impactful.</p>
             </div>
         </div>
 
         <div class="items4">
-            <div class="items4-left">
+            <!-- <div class="items4-left">
                 <img src="https://img.freepik.com/premium-photo/handsome-doctor-portrait-background_488220-12659.jpg" alt="Reliability You Can Trust">
-            </div>
+            </div> -->
             <div class="items4-rightt">
                 <h1>Reliability You Can Trust</h1>
-                <p>Consistency defines us. From your first consultation to post-treatment care...</p>
+                <p>Consistency defines us. From your first consultation to post-treatment care, we uphold the highest standards at every step. Our dedication to reliability builds lasting trust, making us a dependable partner in your health journey.</p>
             </div>
         </div>
     </div>
