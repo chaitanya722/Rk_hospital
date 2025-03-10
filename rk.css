@@ -711,7 +711,7 @@ body::-webkit-scrollbar-thumb {
 .items3,
 .items4 {
   display: flex;
-  height: 50vh;
+  height: 40vh;
   border-radius: 20px;
   padding: 30px;
   background-color: #eff5ff;
@@ -759,7 +759,7 @@ body::-webkit-scrollbar-thumb {
 .items2-rightt,
 .items3-rightt,
 .items4-rightt {
-  width: 70%;
+  width: 80%;
   padding: 20px;
   margin: 0 15px;
   /* Equal spacing on both sides */
@@ -2782,7 +2782,6 @@ a {
     flex-direction: column;
     gap: 2vh;
     padding: 10px;
-    height: 450%;
     justify-content: center;
     align-items: center;
     /* background-color: rgb(68, 0, 255); */
@@ -2796,7 +2795,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    height: 100vh;
+    height: 60vh;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -3028,7 +3027,7 @@ a {
     position: absolute;
     margin: 1vh 1vh;
     z-index: 1;
-    top: 26%;
+    top: 86%;
     left: 0%;
     text-align: center;
     /* Optional: Align text in the paragraph */

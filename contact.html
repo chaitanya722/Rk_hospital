@@ -33,7 +33,6 @@
             color: rgb(58, 202, 221);
             font-size: 3rem;
             font-weight: bold;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .contact-section {
@@ -48,22 +47,21 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .contact-container {
-            width: 100%;
-        }
+      
         .contact-container h2 {
             font-size: 2em;
-            color: #007BFF;
+            color: #3D8C6B;
         }
         .contact-info {
             margin-top: 20px;
+            
         }
         .contact-info p {
             margin: 10px 0;
             font-size: 1.1em;
         }
         .contact-info i {
-            color: #007BFF;
+            color: #3D8C6B;
             margin-right: 10px;
         }
         .map-container {
@@ -78,6 +76,102 @@
             height: 100%;
             border: none;
         }
+     /* Contact Section Layout */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+  
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    width: 90%;
+
+}
+
+/* Contact Card */
+.contact-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card-header {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007BFF;
+
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+}
+
+.contact-card-body p {
+    font-size: 0.9em;  /* Decreased from 1.1em */
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    line-height: 1.4;  /* Ensures better readability */
+}
+
+.contact-card-body i {
+    font-size: 1em;  /* Adjust icon size to match text */
+    margin-right: 8px;
+    color: #3D8C6B;
+
+}
+
+
+
+/* Map Container */
+.map-container {
+    flex: 1;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .contact-card {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
         @media (max-width: 768px) {
             .hero {
                 height: 35vh;
@@ -113,44 +207,36 @@
             <img src="/images/r-k logo.png" alt="Logo" class="logo">
         </a>
               <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+           
           </div>
         </nav>
     <!-- Fullscreen Navigation -->
-    <div class="fullscreen-nav">
-        <ul>
-          <li><a href="#preabout">About Us</a></li>
-          <li><a href="#about">Philosophy</a></li>
-          <li><a href="#services-section">Services</a></li>
-          <li><a onclick="window.location.href='values.html'">Our Values</a></li>
-          <li><a href="#stay">Stay</a></li>
-          <li><a href="#book-apt">Contact Us</a></li>
-        </ul>
-        <div class="buttons">
-          <a href="#book-apt">
-            <button class="book">Book an Appointment</button>
-    
-          </a>
-          <a href="#services-section">
-          <button class="explore">Explore Services</button>
-    
-          </a>
-        </div>
-      </div>
+  
     <div class="hero">
         <h1>Contact Us</h1>
     </div>
-    <section class="contact-section">
-        <div class="contact-container">
-            <p>We'd love to hear from you! Fill out the form below or reach us directly.</p>
-            <div class="contact-info">
+
+      <div class="contact-container">
+        <!-- Contact Details Card -->
+        <div class="contact-card">
+            <div class="contact-card-header">
                 <h3>Our Office</h3>
+            </div>
+            <div class="contact-card-body">
                 <p><i class="fas fa-map-marker-alt"></i> SHOP NO FF/128, Devashish Arcade, Opp. Gurudwara, GIDC Industrial Area, Odhav, Ahmedabad, Gujarat 382415</p>
                 <p><i class="fas fa-envelope"></i> radhekrishnahospitals@gmail.com</p>
                 <p><i class="fas fa-phone"></i> 094096 04552</p>
             </div>
+        </div>
+    
+        <!-- Map Section -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d111536.28923709193!2d72.5841002648948!3d23.024631365139278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d23.0266852!2d72.66684099999999!4m5!1s0x395e8730e1e0869f%3A0xcd974c7885956e56!2sSHOP%20NO%20FF%2F128%2C%20Devashish%20arcade%2C%20opp.%20GURUDWARA%2C%20G%20I%20D%20C%20Industrial%20Area%2C%20Odhav%2C%20Ahmedabad%2C%20Gujarat%20382415!3m2!1d23.024494699999998!2d72.6665022!5e1!3m2!1sen!2sin!4v1741115588452!5m2!1sen!2sin" allowfullscreen loading="lazy"></iframe>
+        </div>
+    </div>
+    
+        
+            <!-- <p>We'd love to hear from you! Fill out the form below or reach us directly.</p> -->
             <div class="bookapt" id="book-apt">
                 <section class="bookappointment">
                   <h1>Book Appointment</h1>
@@ -214,11 +300,7 @@
                 </section>
               </div>
         </div>
-      
-        
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d111536.28923709193!2d72.5841002648948!3d23.024631365139278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d23.0266852!2d72.66684099999999!4m5!1s0x395e8730e1e0869f%3A0xcd974c7885956e56!2sSHOP%20NO%20FF%2F128%2C%20Devashish%20arcade%2C%20opp.%20GURUDWARA%2C%20G%20I%20D%20C%20Industrial%20Area%2C%20Odhav%2C%20Ahmedabad%2C%20Gujarat%20382415!3m2!1d23.024494699999998!2d72.6665022!5e1!3m2!1sen!2sin!4v1741115588452!5m2!1sen!2sin" allowfullscreen loading="lazy"></iframe>
-        </div>
     </section>
+    
 </body>
 </html>
