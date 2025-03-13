@@ -1299,7 +1299,7 @@ svg {
   /* background: #444; */
   border-radius: 20px;
   transform: scale(0.8);
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.4s ease-in-out, opacity 0.4s;
   opacity: 1;
   display: flex;
   justify-content: center;
@@ -1309,6 +1309,7 @@ svg {
   object-fit: cover;
   object-position: center;
 }
+
 
 .carousel-item img {
   border-radius: 20px;
@@ -1337,6 +1338,7 @@ svg {
 
 
 }
+
 
 .carousel-btn {
   position: absolute;
@@ -1923,17 +1925,31 @@ textarea:focus {
   margin-bottom: 0;
 }
 
-
 .logo {
-  max-width: 300px;
-  /* Adjust width */
+  max-width: 250px; /* Default size */
   height: auto;
   display: block;
-  /* Ensures it behaves as a block element */
-  margin-left: -20px;
-  /* Pushes it to the left */
+  margin-left: 0; /* Align properly */
   padding-left: 0;
-  /* Ensures no extra padding */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .logo {
+    max-width: 220px; /* Slightly smaller for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 180px; /* Reduce size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 150px; /* Further reduce size for smaller screens */
+  }
 }
 
 
@@ -2776,6 +2792,9 @@ a {
 
 /* Responsive Styling for Mobile Devices */
 @media (max-width: 768px) {
+
+ 
+
   .preabout2 {
     /* padding: 20px; */
     display: flex;
@@ -2825,6 +2844,10 @@ a {
     height: 60vh;
 
   }
+
+  p {
+    font-size: 15px; /* Adjust font size for better mobile fit */
+}
 
   .items1-rightt,
   .items2-rightt,
@@ -3025,7 +3048,7 @@ a {
     height: 15vh;
     display: flex;
     position: absolute;
-    margin: 1vh 1vh;
+    margin: 5vh 1vh;
     z-index: 1;
     top: 86%;
     left: 0%;
@@ -3434,7 +3457,7 @@ a {
   .items5-rightt {
     /* background-color: #2f6f53; */
     width: 100%;
-
+    text-align: center; 
 
   }
 
