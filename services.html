@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="rk.css">
+     <!-- Link your CSS file -->
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script> 
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".fullscreen-nav");
+    
+        hamburger.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+        });
+    });
+</script>
+    
+<body>
+      <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">
+        <img src="/images/r-k logo.png" alt="Logo" class="logo">
+    </a>
+          <div class="hamburger">
+       
+      </div>
+    </nav>
+<!-- Fullscreen Navigation -->
+
+
+<div class="services-section" id="services-section"> 
+    
+    <p class="ser_text">Experiance comprehensive healthcare through our special departments</p>
+      <p class="active_service">Surgery</p>
+
+     <div class="btns">
+      <a href="#book-apt"><button class="book-apt">book an appointment</button></a>
+      <button class="learn" id="learnMore">learn more <i class="fas fa-arrow-right"></i></button>
+    </div>
+    <h1>Services</h1>
+    <div class="carousel">
+      <button class="carousel-btn prev-btn"><i class="fas fa-arrow-left"></i></button>
+
+      <button class="carousel-btn next-btn"> <i class="fas fa-arrow-right"></i></button>
+      
+      <div class="carousel-track-container">
+        <div class="carousel-track">
+          <div class="carousel-item" id="caro-item1" data-service="surgery"><img src="https://img.freepik.com/free-photo/surgeons-passing-scissors-each-other_329181-19635.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>
+          <div class="carousel-item carousel-item-2" data-service="orthopedic"><img src="https://img.freepik.com/premium-photo/physiotherapist-holding-skeleton-feet-model_107420-53154.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>
+          <div class="carousel-item carousel-item-2" data-service="ENT"><img src="https://img.freepik.com/free-photo/doctor-using-inspection-spatula-examine-patient-throat-ent-doctor-doing-throat-exam-woman-patient-opened-her-mouth-throat-checkup_657921-246.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>
+          <div class="carousel-item carousel-item-2" data-service="Pediatric"><img src="https://img.freepik.com/free-photo/african-american-pediatrician-doctor-analyzing-sickness-expertise-using-tablet_482257-26937.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>
+          <div class="carousel-item carousel-item-2" data-service="Medicine"><img src="https://img.freepik.com/free-photo/flat-lay-arrangement-with-pills_23-2148504582.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div> 
+          <div class="carousel-item carousel-item-2" data-service="Neurology"><img src="https://img.freepik.com/free-photo/flat-lay-arrangement-with-pills_23-2148504582.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>         
+          <div class="carousel-item carousel-item-2" data-service="Nephrology"><img src="https://img.freepik.com/free-photo/flat-lay-arrangement-with-pills_23-2148504582.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>         
+          <div class="carousel-item carousel-item-2" data-service="Gastroenterology"><img src="https://img.freepik.com/free-photo/flat-lay-arrangement-with-pills_23-2148504582.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming" alt=""></div>         
+        
+        </div>
+      </div>
+    </div>
+    
+  </div> 
+  <div class="post_services hidden">
+    <button id="back"><i class="fas fa-arrow-left"></i></button>
+   <a href="#book-apt"> <button id="bkapt">book an appointment</button></a>
+    <p class="active_service2">Surgery</p>
+    <div class="ser ser1">
+      <h1>conditions treated</h1>
+      <ul>
+        <!-- <li></li> -->
+      </ul>
+    </div>
+    <div class="ser ser2">
+      <h1>
+        diagonostic procedure
+      </h1>
+      <ul>
+        <!-- <li></li> -->
+      </ul>
+    </div>
+    <div class="ser ser3">
+      <h1>treatment options</h1>
+      <ul>
+        <!-- <li></li> -->
+      </ul>
+    </div>
+  </div>
+     
+</body>
+</html>

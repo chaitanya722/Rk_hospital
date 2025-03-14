@@ -1286,8 +1286,7 @@ mm.add("(max-width: 480px)", () => {
       
       
 
-
-          const track = document.querySelector('.carousel-track');
+const track = document.querySelector('.carousel-track');
 const itemss = document.querySelectorAll('.carousel-item');
 const activeServiceElement = document.querySelector('.active_service'); // Element for active_service
 const activeService2Element = document.querySelector('.active_service2'); // Element for active_service2
