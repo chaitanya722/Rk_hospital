@@ -3,37 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="icon" type="image/png" href="/images/r-k logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="rk.css">     <!-- Link your CSS file -->
-    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script> 
-</head>
+    <title>About Us - Radhe Krishna Healthcare</title>
+    <link rel="stylesheet" href="rk.css">
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".fullscreen-nav");
-    
-        hamburger.addEventListener("click", function () {
-            navMenu.classList.toggle("active");
-        });
-    });
-</script>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "Rd0JBPTGx_SSrSsAM",
-      });
-   })();
-</script>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #000;
+            text-align: center;
+        }
+
+        h3 {
+            color: #000;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .about-section, .vision-mission, .milestones {
+            padding: 30px;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 40px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .vertical-line {
+            width: 5px;
+            height: 50px;
+            background-color: #000;
+            margin: 10px auto;
+        }
+    </style>
+</head>
 <body>
    <!-- Navbar -->
    <nav class="navbar">
@@ -44,94 +65,59 @@
         <span></span>
       </div>
     </nav>
+    
  <!-- Fullscreen Navigation -->
  <div class="fullscreen-nav" id = "fullscreen-nav">
   <ul>
     <li><a onclick="window.location.href='aboutus.html'">About Us</a></li>
-
     <li><a href="#about">Philosophy</a></li>
     <li><a onclick="window.location.href='services.html'">Services</a></li>
-
     <li><a onclick="window.location.href='values.html'">Our Values</a></li>
     <li><a href="#stay">Stay</a></li>
     <li><a onclick="window.location.href='contact.html'">Contact Us</a></li>
   </ul>
+
   <div class="buttons">
     <a href="#book-apt">
       <button class="book">Book an Appointment</button>
-
     </a>
     <a href="#services-section">
     <button class="explore">Explore Services</button>
     </a>
   </div>
 </div>
+    <section class="about-section">
+        <h1>About Us</h1>
+        <p>
+            Radhe Krishna is a multi-specialty healthcare center setting new standards in patient care.
+            Our facility brings together medical professionals across eight specialties: Nephrology,
+            Neurology, Pediatrics, ENT, General Surgery, Orthopedics, Internal Medicine, and Gastroenterology.
+        </p>
+    </section>
+    
+    <section class="vision-mission">
+        <h3>Our Vision</h3>
+        <ul>
+            <li>Pioneering a healthcare experience that merges advanced medical expertise with compassionate patient care.</li>
+            <li>Creating an environment where healing is supported by both science and understanding.</li>
+        </ul>
+        
+        <h3>Our Mission</h3>
+        <ul>
+            <li>Elevating healthcare through personalized attention and medical excellence.</li>
+            <li>Combining innovative treatments with clear communication and preventive education.</li>
+            <li>Guiding the community toward better health while building trust with every patient interaction.</li>
+        </ul>
 
-<div class="about" id="about">
-
-    <div class="circle-abt">
-      <div class="images-abt">
-        <img src="https://img.freepik.com/premium-photo/portrait-smiling-young-man-against-white-background_1048944-23214614.jpg?ga=GA1.1.225339577.1717430258" alt="">
-        <img src="https://img.freepik.com/premium-photo/male-student-doctor-does-pcr-test-patient-takes-it-analysis_283470-2528.jpg?ga=GA1.1.225339577.1717430258" alt="">
-         
-        <img src="https://img.freepik.com/premium-photo/female-medical-worker-doctor-woman-glasses-looking-camera-shows-thumbs-up-hospital-clinic_717737-449.jpg?ga=GA1.1.225339577.1717430258" alt="">
-        <img src="https://img.freepik.com/premium-photo/nurse-taking-nasal-swab-from-senior-patient-test-possible-coronavirus-infection_274689-32295.jpg?ga=GA1.1.225339577.1717430258" alt="">
+   
+          <h3>Our Milestones</h3>
+          <ul>
+              Recognition has followed our efforts. We're proud to be on the path toward national medical board certifications,
+              a testament to our commitment to maintaining the highest standards of medical care and patient safety.
+          </ul>
       
-  
-     
-      </div>
-     
-     
-    </div>
-  
-    <h1 class="about-hd">
-      philosophy
-    </h1>
+    </section>
     
-    <div class="container">
-      <div class="wrapper">
-        <div class="item 1 active"><img src="https://img.freepik.com/free-photo/female-doctor-hospital_23-2148827756.jpg?ga=GA1.1.225339577.1717430258&semt=ais_hybrid" alt=""></div>
-        <div class="item 2"><img src="https://img.freepik.com/free-photo/medium-shot-doctor-wearing-lab-coat_23-2148816191.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming_vrsd" alt=""></div>
-        <div class="item 3"><img src="https://img.freepik.com/premium-photo/smiling-female-doctor-standing-crossing-hands-one-volor-background_953680-45073.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming_vrsd" alt=""></div>
-        <div class="item 4" id="item4"><img src="https://img.freepik.com/premium-photo/smiling-female-doctor-holding-medical-records-one-color-background-copy-space_953680-43415.jpg?ga=GA1.1.225339577.1717430258&semt=ais_incoming_vrsd" alt=""></div>
-       
-        <svg viewBox="0 0 300 300">
-          <circle id="holder" class="st0" cx="151" cy="151" r="150"/>
-        </svg>
-      </div>
-     
-    </div>
-    <div class="abt-btns" >
-      <button id="prev" class="pre"><i class="fas fa-chevron-up"></i></button>
-      <button id="next" class="nex"><i class="fas fa-chevron-down"></i></button>
-    </div>
-  
-    <div class="right-content">
-  
-      <div class="button-container">
-        <button class="btn1">
-          ABOUT US
-        </button>
-      </div>
     
-      <h1 class="services-title">same day results</h1>
-      <p class="para">Get your test results on the same day, ensuring faster diagnosis and treatment. Experience prompt and reliable services that prioritize your health and peace of mind.</p>
-      <a href="#book-apt">
-      <button class="btn2">Book an appointment</button>
-      </a>
-    </div>
-   <a href="#services-section" class="any"> <button class="scroll-down scroll-down2">
-    <span>&#8595;</span>
-    </button></a>
-  </div>  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-<script src="https://unpkg.com/split-type"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
-  <script src="script.js"></script>
-
-  </script>
-  </body>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay</title>
+    <link rel="stylesheet" href="rk.css">
+     <!-- Link your CSS file -->
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script> 
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".fullscreen-nav");
+    
+        hamburger.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+        });
+    });
+</script>
+    
+<body>
+    <nav class="navbar">
+        <img src="/images/r-k logo.png" alt="Logo" class="logo">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+     <!-- Fullscreen Navigation -->
+     <div class="fullscreen-nav" id = "fullscreen-nav">
+      <ul>
+        <li><a onclick="window.location.href='aboutus.html'">About Us</a></li>
+        <li><a href="#about">Philosophy</a></li>
+        <li><a onclick="window.location.href='services.html'">Services</a></li>
+        <li><a onclick="window.location.href='values.html'">Our Values</a></li>
+        <li><a onclick="window.location.href='stay.html'">Stay</a></li>
+        <li><a onclick="window.location.href='contact.html'">Contact Us</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="#book-apt">
+          <button class="book">Book an Appointment</button>
+    
+        </a>
+        <a href="#services-section">
+        <button class="explore">Explore Services</button>
+        </a>
+      </div>
+    </div>
+<!-- Fullscreen Navigation -->
+
+
+<div class="stay" id="stay">
+    <p class="hd_stay">stay</p>
+    <h1 class="bg_stay">stay</h1>
+    <p class="p_stay">we aim to make your stay as <span>comfortable</span> and restorative as possible.Our <span>dedicated</span> team is committed to not only providing <span>expert</span> medical care but also ensuring that you feel <span>genuienly</span> cared for and supported during your time with us.your well being is our priority</p>
+    <a href="#fullscreen-nav" class="any"> <button class="scroll-down scroll-down2">
+      <span>&#8593;</span>
+      </button></a>
+
+  </div> 
+  <div class="your">
+    <div class="your_top">
+      <p class="yh1 yh11" id="mytext">your care, your comfort</p>
+      <p class="yh1 yh12" id="mytext">your choice</p>
+    </div>
+    <div class="your_down" id="your_down">
+      <div class="your_item yitem1">
+        <h1>inpatient stay</h1>
+        <p>We provide comprehensive 24-hour medical care for patients requiring overnight stays. voluptatibus.</p>
+        <button class="learn-more-btn" onclick="redirectToPage('impatient')">learn more</button>
+      </div>
+      <div class="your_item yitem2">
+        <h1>outpatient stay</h1>
+        <p>Access quality medical care through our same-day services.</p>
+        <button onclick="redirectToPage('outpatient')">learn more</button>
+      </div>
+      <div class="your_item yitem3">
+        <h1>visitors</h1>
+        <p>We welcome family and friends as essential parts of our patients' healing journey.</p>
+        <button onclick="redirectToPage('visitors')">learn more</button>
+       
+      </div>
+    </div>
+    
+  </div> 
+  
+   
+</body>
+</html>
