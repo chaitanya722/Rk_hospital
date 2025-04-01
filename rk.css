@@ -147,6 +147,11 @@ body::-webkit-scrollbar-thumb {
   width: 23px;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+
 /* Fullscreen Nav */
 .fullscreen-nav {
   position: absolute;
