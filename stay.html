@@ -3,360 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Stay</title>
+    <link rel="stylesheet" href="rk.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
     <style>
-
-      
-/* Navbar */
-.navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0px;
-  z-index: 1000;
-  background: transparent;
-
-}
-
-.navbar .logo img {
-  width: 8vw;
-  height: 5vw;
-}
-
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-}
-
-.navbar .hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-
-.hamburger span {
-  display: block;
-  height: 3px;
-  border-radius: 20px;
-  background: white;
-  transition: 0.3s;
-}
-
-
-.hamburger.active span {
-  background-color: #56595f;
-  /* Color after click */
-}
-
-
-.hamburger span:first-child {
-  width: 23px;
-}
-
-.hamburger span:last-child {
-  width: 23px;
-}
-
-body.no-scroll {
-  overflow: hidden;
-}
-
-
-/* Fullscreen Nav */
-.fullscreen-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1000vh;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 200; /* Increase the z-index */
-  transition: 0.5s;
-  text-transform: capitalize;
-  border: 5px solid red; /* Temporary for debugging */
-
-}
-
-.fullscreen-nav.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.fullscreen-nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-.fullscreen-nav ul li {
-  margin: 20px 0;
-  width: 95vw;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 10px;
-  /* background-color:#f3f3f3; */
-
-}
-
-.fullscreen-nav ul li a {
-  text-decoration: none;
-  color: #545860;
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
-
-.fullscreen-nav ul li:hover {
-  background-color: #f3f3f3;
-
-}
-
-.fullscreen-nav .buttons {
-  display: flex;
-  margin-top: 20px;
-}
-
-.fullscreen-nav .buttons button {
-  padding: 10px 20px;
-  margin: 0 10px;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.fullscreen-nav .buttons .book {
-  background-color: #2b7055;
-  color: white;
-  border-radius: 30px;
-}
-
-.fullscreen-nav .buttons .explore {
-  background-color: transparent;
-  border: 1px solid #56595f;
-  color: #56595f;
-  border-radius: 30px;
-
-}
-
-/* Hamburger Transform */
-.hamburger.active span:first-child {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:last-child {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-
-     
-.stay {
-  width: 100%;
-  height: 110vh;
-  background-color: #fafcfe;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font-primary);
-  z-index: 100;
-}
-
-
-.hd_stay {
-  position: absolute;
-  text-transform: uppercase;
-  border: 2px solid #6fbfa2;
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 5px;
-  font-weight: 500;
-  color: #6fbfa2;
-  top: 15vh;
-
-
-}
-
-.p_stay {
-  position: absolute;
-  font-size: 20px;
-  width: 40vw;
-  line-height: 30px;
-  font-weight: 500;
-  color: #636973;
-}
-
-.p_stay span {
-  font-weight: bold;
-  color: #656c7e;
-}
-
-.bg_stay {
-  font-size: 35vw;
-  color: #f2f3f8;
-  opacity: 1;
-  text-transform: uppercase;
-}
-
-
-.stay p,
-.stay h1 {
-  transform: translateY(100px);
-  /* Off-screen position */
-  opacity: 0;
-  /* Hidden initially */
-}
-
-/* ===============================================================================================================================
- =============================================================================================================================== =============================================================================================================================== */
-
-/* your choice your comfort */
-
-/* ===============================================================================================================================
- =============================================================================================================================== =============================================================================================================================== */
-
-
-.your {
-  width: 100%;
-  height: 100vh;
-  /* background-color:#fafcfe; */
-  background-color: #fafcfe;
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-primary);
-  /* align-items: center; */
-  /* padding: 20px; */
-}
-
-.your_top {
-  width: 100%;
-  height: 40%;
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  font-family: var(--font-primary);
-}
-
-.yh1 {
-  font-size: 30px;
-  text-transform: uppercase;
-  align-self: self-start;
-  display: block;
-  left: 4vw;
-  overflow: hidden;
-  transition: all;
-}
-
-.yh11 {
-  position: absolute;
-  margin-top: 10vh;
-}
-
-.yh11 span {
-  display: inline-block;
-}
-
-.yh12 span {
-  display: inline-block;
-}
-
-.yh12 {
-  position: absolute;
-  margin-top: 16vh;
-  background-color: #fdf6ac;
-  border-radius: 2px;
-  padding: 2px 2px;
-}
-
-
-.your_down {
-  width: 100%;
-  height: 60%;
-  /* background-color:green; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5vw;
-
-}
-
-.your_item {
-  width: 30%;
-  height: 70%;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 20px;
-  margin-top: 25px;
-  color: white;
-  gap: 4vh;
-  transform-origin: center;
-  overflow: hidden;
-}
-
-.yitem1 {
-  background-color: #6c7e85;
-
-}
-
-.yitem2 {
-  background-color: #656d7b;
-}
-
-.yitem3 {
-  background-color: #978a7d;
-}
-
-.your_item p {
-  text-align: left;
-  color: white;
-
-}
-
-.your_item h1 {
-  text-transform: uppercase;
-}
-
-.your_item button {
-  font-size: 20px;
-  padding: 5px;
-  text-transform: capitalize;
-  border: none;
-  outline: none;
-  background-color: #336d56;
-  color: white;
-  border-radius: 20px;
-  padding: 8px 10px;
-}
-
-
-
-
-
-  </style>
+      .extrastay{
+        margin-top: 20vh;
+        z-index: -1;
+      }
+    </style>
 </head>
 
-<script>
+<!-- <script>
   document.addEventListener("DOMContentLoaded", function () {
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".fullscreen-nav");
@@ -365,46 +24,47 @@ body.no-scroll {
           navMenu.classList.toggle("active");
       });
   });
-  </script>
+  
+  </script> -->
 <body>
 
    <!-- Navbar -->
    <nav class="navbar">
     <a href="index.html">
       <img src="/images/r-k logo.png" alt="Logo" class="logo">
-  </a>  
+  </a>
       <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-    
- <!-- Fullscreen Navigation -->
- <div class="fullscreen-nav" id = "fullscreen-nav">
-  <ul>
-    <li><a onclick="window.location.href='aboutus.html'">About Us</a></li>
-    <li><a href="#about">Philosophy</a></li>
-    <li><a onclick="window.location.href='services.html'">Services</a></li>
-    <li><a onclick="window.location.href='values.html'">Our Values</a></li>
-    <li><a onclick="window.location.href='stay.html'">Stay</a></li>
-    <li><a onclick="window.location.href='contact.html'">Contact Us</a></li>
-  </ul>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-  <div class="buttons">
-    <a href="#book-apt">
-      <button class="book">Book an Appointment</button>
-    </a>
-    <a onclick="window.location.href='service.html'">
+  <!-- Fullscreen Navigation -->
+  <div class="fullscreen-nav" id = "fullscreen-nav">
+    <ul>
+      <li><a onclick="window.location.href='aboutus.html'">About Us</a></li>
+      <li><a onclick="window.location.href='philosophy.html'">Philosophy</a></li>
+      <li><a onclick="window.location.href='services.html'">Services</a></li>
+      <li><a onclick="window.location.href='values.html'">Our Values</a></li>
+      <li><a onclick="window.location.href='stay.html'">Stay</a></li>
+      <li><a onclick="window.location.href='contact.html'">Contact Us</a></li>
+    </ul>
+    <div class="buttons">
+      <a href="#book-apt">
+        <button class="book">Book an Appointment</button>
+
+      </a>
+      <a href="#services-section">
       <button class="explore">Explore Services</button>
       </a>
+    </div>
   </div>
-</div>
   
 
   
 
-  <div class="stay" id="stay">
+  <div class="stay extrastay" id="stay">
     <p class="hd_stay">stay</p>
     <h1 class="bg_stay">stay</h1>
     <p class="p_stay">we aim to make your stay as <span>comfortable</span> and restorative as possible.Our
@@ -443,43 +103,46 @@ body.no-scroll {
   </form>
   </section>
   </div>
-  </script>
+
+ 
   <script>
     function redirectToPage(page) {
       if (page === 'values') {
         window.location.href = 'values.html';
       }
     }
-  </script>
+    </script>
 
-  <script>
-    function redirectToPage(page) {
-      if (page === 'contact') {
-        window.location.href = 'contact.html';
-      }
+<script>
+  function redirectToPage(page) {
+    if (page === 'contact') {
+      window.location.href = 'contact.html';
     }
+  }
   </script>
 
-  <script>
-    function redirectToPage(page) {
-      if (page === 'stay') {
-        window.location.href = 'stay.html';
-      }
+<script>
+  function redirectToPage(page) {
+    if (page === 'stay') {
+      window.location.href = 'stay.html';
     }
+  }
   </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-  <script src="https://unpkg.com/split-type"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
+<script src="./script.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
-  <script src="script.js"></script>
+  
 
-  </script>
+
+  
 </body>
 
 </html>
