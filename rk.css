@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  z-index: 100;
+  z-index: 10000000;
   background: transparent;
 
 }
@@ -121,6 +121,11 @@ body::-webkit-scrollbar-thumb {
   width: 30px;
   height: 20px;
   cursor: pointer;
+  
+  
+  
+  
+  
 }
 
 
@@ -130,17 +135,21 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background: white;
   transition: 0.3s;
+  
+  
 }
-
 
 .hamburger.active span {
   background-color: #56595f;
+  
+  
   /* Color after click */
 }
 
 
 .hamburger span:first-child {
   width: 23px;
+  
 }
 
 .hamburger span:last-child {
@@ -149,6 +158,7 @@ body::-webkit-scrollbar-thumb {
 
 body.no-scroll {
   overflow: hidden;
+  
 }
 
 
@@ -166,14 +176,16 @@ body.no-scroll {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  z-index: 10;
   transition: 0.5s;
   text-transform: capitalize;
+  z-index: 1000000;
 }
 
 .fullscreen-nav.active {
   opacity: 1;
   visibility: visible;
+  
+  
 }
 
 .fullscreen-nav ul {
@@ -187,6 +199,7 @@ body.no-scroll {
   height: 50px;
   line-height: 50px;
   border-radius: 10px;
+  cursor: pointer;
   /* background-color:#f3f3f3; */
 
 }
@@ -206,6 +219,7 @@ body.no-scroll {
 .fullscreen-nav .buttons {
   display: flex;
   margin-top: 20px;
+  
 }
 
 .fullscreen-nav .buttons button {
@@ -214,6 +228,7 @@ body.no-scroll {
   border: none;
   font-size: 20px;
   cursor: pointer;
+  
 }
 
 .fullscreen-nav .buttons .book {
@@ -227,12 +242,16 @@ body.no-scroll {
   border: 1px solid #56595f;
   color: #56595f;
   border-radius: 30px;
+  
 
 }
 
 /* Hamburger Transform */
 .hamburger.active span:first-child {
   transform: rotate(45deg) translate(5px, 5px);
+  
+  
+  
 }
 
 .hamburger.active span:nth-child(2) {
@@ -889,6 +908,7 @@ body.no-scroll {
   overflow: hidden;
 
 
+
 }
 
 
@@ -965,7 +985,7 @@ body.no-scroll {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   border-radius: 100%;
-  z-index: 1;
+  /* z-index: 10; */
   cursor: pointer;
 
 }
@@ -1225,6 +1245,7 @@ svg {
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
   font-family: var(--font-primary);
+  
 
 }
 
@@ -1233,7 +1254,7 @@ svg {
   position: absolute;
   left: 100px;
   top: 30px;
-  z-index: 1000;
+  /* z-index: 1000; */
   font-weight: bold;
   color: #348061;
   padding: 10px;
@@ -1245,7 +1266,7 @@ svg {
 }
 
 .services-section .ser_text {
-  z-index: 10;
+  /* z-index: 10; */
   font-size: 25px;
   position: absolute;
   top: 90px;
@@ -1256,7 +1277,7 @@ svg {
 }
 
 .active_service {
-  z-index: 1000000000;
+  /* z-index: 1000000000; */
   font-size: 40px;
   position: absolute;
   top: 50px;
@@ -1418,7 +1439,7 @@ svg {
   /* background-color: green; */
   background-color: #fafcfe;
   position: absolute;
-  z-index: 10000000000;
+  z-index: 1000;
   top: "-300vh";
   left: 0;
   display: flex;
@@ -1543,7 +1564,7 @@ background-color: aqua;
 
 .active_service2 {
   position: absolute;
-  z-index: 1000000000;
+  /* z-index: 1000000000; */
   font-size: 40px;
   font-family: var(--font-primary);
   right: 420px;
@@ -2062,10 +2083,11 @@ a {
   width: 64px;
   height: 64px;
   font-size: 30px;
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 500px;
   right: 20px;
   cursor: pointer;
+  z-index: 100;
 }
 
 
@@ -2116,7 +2138,9 @@ a {
 @media (max-width: 768px) {
   .fullscreen-nav .buttons {
     font-size: 20px;
+    z-index: 10000;
   }
+  
 
   .navbar .logo img {
     height: 15vw !important;
@@ -2385,7 +2409,7 @@ a {
   .wrapper img {
     /* background-color:purple; */
     scale: 0.7;
-  }
+      }
 
   .wrapper .item {
     background-color: transparent;
@@ -3054,7 +3078,7 @@ a {
     display: flex;
     position: absolute;
     margin: 5vh 1vh;
-    z-index: 1;
+    /* z-index: 1; */
     top: 86%;
     left: 0%;
     text-align: center;
@@ -3072,7 +3096,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100000;
+    /* z-index: 100000; */
     position: absolute;
     /* top: 35%; */
     /* left: 20%; */
@@ -3692,7 +3716,7 @@ a {
     font-size: 20px;
     padding: 20px;
     border-radius: 30px;
-    z-index: 100000;
+    /* z-index: 100000; */
     position: absolute;
     /* top: 38%; */
     margin: 2vh 1vh;
@@ -4105,8 +4129,6 @@ a {
       text-align: center;
     }
   }
-  
-  
   .abt-btns {
     background-color: #626a7c;
     /* width: 10%; */
@@ -4120,7 +4142,14 @@ a {
     /* flex-direction:row-reverse; */
     align-items: center;
     padding: 5px;
+    z-index:1000000;
 
+  }
+  .fullscreen-nav{
+    z-index:10000000;
+  }
+  .navbar{
+    z-index:100000000;
   }
   .pre{
     margin-left: 8px;
@@ -4146,6 +4175,7 @@ a {
   right: 5px;
   /* left : 0px; */
   cursor: pointer;
+  position: fixed;
   >img{
     height: 30px;
     width: 30px;
@@ -4246,7 +4276,7 @@ a {
   display:none;
  } .services-section>.ser_text {
   display: flex;
-  z-index: 100;
+  /* z-index: 100; */
   font-size: 19px;
   width: 85%;
   text-align: center;
@@ -4257,7 +4287,6 @@ a {
   transform: translate(-50%, -10%);
   /* Optional: Align text in the paragraph */
 }
-
 }
 
 
