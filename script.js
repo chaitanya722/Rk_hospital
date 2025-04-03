@@ -1,5 +1,6 @@
 // js for email sending
   // Handle form submission
+  document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("appointmentForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission
 
@@ -36,6 +37,7 @@
         console.log('Error:', error);
       });
 });
+  });
 
 // js for hero section
 const hamburger = document.querySelector('.hamburger');
