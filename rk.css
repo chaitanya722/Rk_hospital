@@ -133,8 +133,8 @@ body::-webkit-scrollbar-thumb {
   display: block;
   height: 3px;
   border-radius: 20px;
-  background: white;
-  transition: 0.3s;
+  background-color: #2f6f53;
+    transition: 0.3s;
   
   
 }
