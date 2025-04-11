@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="rk.css">
      <!-- Link your CSS file -->
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script> 
+    <script src="./script.js" defer></script>
 </head>
 
-<script>
+<!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".fullscreen-nav");
@@ -18,7 +19,7 @@
             navMenu.classList.toggle("active");
         });
     });
-</script>
+</script> -->
     
 <body>
     <nav class="navbar">
@@ -40,7 +41,7 @@
         <li><a onclick="window.location.href='services.html'">Services</a></li>
     
         <li><a onclick="window.location.href='values.html'">Our Values</a></li>
-        <li><a href="#stay">Stay</a></li>
+        <li><a onclick="window.location.href='stay.html'">Stay</a></li>
         <li><a onclick="window.location.href='contact.html'">Contact Us</a></li>
       </ul>
       <div class="buttons">
@@ -48,7 +49,7 @@
           <button class="book">Book an Appointment</button>
     
         </a>
-        <a onclick="window.location.href='services.html'">
+        <a href="#services-section">
         <button class="explore">Explore Services</button>
         </a>
       </div>
