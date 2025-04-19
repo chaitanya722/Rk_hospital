@@ -1295,7 +1295,7 @@ const activeService2Element = document.querySelector('.active_service2'); // Ele
 let activeIndex = 0;
 
 // Add unique data attributes or identifiers to your carousel items
-const services = ["Surgery", "Orthopedic", "ENT", "Pediatric", "Medicine"]; // Replace with actual names
+const services = ["Surgery", "Orthopedic", "ENT", "Pediatric", "Medicine","Neurology","Nephrology","Gastroenterology"];
 
 // Function to update active_service2
 function updateActiveService2(activeService) {
