@@ -23,7 +23,7 @@
     };
 
     // Send the email using EmailJS
-    emailjs.send('service_cohchpl', 'template_24er3j7', templateParams)
+    emailjs.send('service_5a3sl1b', 'template_pslmf1l', templateParams)
       .then(function(response) {
         // Show a success message or handle response
         alert('Appointment booked successfully!');
